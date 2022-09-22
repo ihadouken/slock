@@ -21,6 +21,13 @@ ResourcePref resources[] = {
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
 
+/* number of failed password attempts until failcommand is executed.
+   Set to 0 to disable */
+static const int failcount = 4;
+
+/* command to be executed after [failcount] failed password attempts */
+static const char *failcommand = "shutdown";
+
 /* insert grid pattern with scale 1:1, the size can be changed with logosize */
 static const int logosize = 75;
 /* grid width and height for right center alignment */
