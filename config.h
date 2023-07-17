@@ -28,6 +28,9 @@ static const int failcount = 4;
 /* command to be executed after [failcount] failed password attempts */
 static const char *failcommand = "shutdown";
 
+/* command to be executed after unlocked. */
+static const char *success_command = "shutdown -c";
+
 /* insert grid pattern with scale 1:1, the size can be changed with logosize */
 static const int logosize = 75;
 /* grid width and height for right center alignment */
